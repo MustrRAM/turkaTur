@@ -74,7 +74,6 @@ body {
   .header .nav .menu {
     flex-direction: column;
     background: #fff;
-    justify-content: end;
     color: #000;
     position: absolute;
     width: 100%;
@@ -89,6 +88,9 @@ body {
   .header .nav .menu.menu--active {
     transform: translateY(0);
   }
+}
+.header .nav .menu .menu__list:first-child {
+  margin-top: 20%;
 }
 .header .nav .menu .menu__link {
   transition: transform 0.3s;
