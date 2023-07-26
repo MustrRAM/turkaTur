@@ -4,6 +4,7 @@ const menuOpen = document.querySelector('.menu__open');
 const menuClose = document.querySelector('.menu__close');
 const noScroll = document.querySelector('body');
 const mainBlur = document.querySelector('.main')
+ 
 
 menuOpen.addEventListener('click', function() {
     menu.classList.add('menu--active');
@@ -39,4 +40,17 @@ socialOpen.addEventListener('click', function(){
 topButton.addEventListener('click', function(){
     topSocial.classList.add('social--active');
     topButton.classList.add('hidden');
-})
+});
+
+
+
+let options = {
+    threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('#animation');
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+
+
+  

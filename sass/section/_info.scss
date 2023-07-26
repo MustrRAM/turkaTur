@@ -1,6 +1,9 @@
 .info{
     margin-bottom: 100px;
     position: relative;
+    @include media($m1000){
+        margin-bottom: 50px;
+    }
 
     .about{
         color: #000;
@@ -11,7 +14,7 @@
             line-height: 119.7%; 
             text-transform: uppercase;
             position: absolute;
-            top: 15%;
+            top: 16%;
             right: 4%;
             z-index: -1;
 
@@ -23,9 +26,7 @@
         .about__hedaer{
             color: #C4C4C4;
             font-size: 20px;
-            font-style: normal;
             font-weight: 400;
-            line-height: normal;
             letter-spacing: 12px;
             text-transform: uppercase;
             display: block;
@@ -34,17 +35,23 @@
             
             @include media($m500){
                 letter-spacing: 6px;
+                font-size: 18px;
             }
           
         }
 
         .about__title{
+            font-family: $openSans;
+
             font-size: 64px;
             font-style: normal;
             font-weight: 700;
-            line-height: 109%;
+            line-height: 129%;
             text-transform: uppercase;
             max-width: 850px;
+            @include media($m800){
+                font-size: 45px;
+            }
             @include media($m500){
                 font-size: 30px;
             }
@@ -68,15 +75,18 @@
                 }
                 p{
                     font-size: 36px;
-                    max-width: 400px;
+                    font-weight: 700;
+                    font-family: $openSans;
+
+                    @include media($m800){
+                        font-size: 27px;
+                    }
                 }
                 display: flex;
                 flex-direction: column; 
                 gap: 20px;
                 
                 .about__list{
-                  
-
                     .about__link{
 
                         font-size: 20px;

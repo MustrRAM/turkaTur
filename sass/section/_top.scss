@@ -6,7 +6,6 @@
     right: 0;
     margin: auto;
     text-align: center;
-    font-family: 'Open Sans';
 
    
 
@@ -15,6 +14,8 @@
     }
 
     h1{
+        font-family: $openSans;
+
         color: #FFF;
         text-align: center;
         font-size: 70px;

@@ -4,19 +4,23 @@
     .tures__header{
         color: #C4C4C4;
         font-size: 20px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
         letter-spacing: 12px;
         text-transform: uppercase;
         display: block;
         max-width: max-content;
         margin-bottom: 15px;
+
+        @include media($m500){
+            font-size: 18px;
+            letter-spacing: 10px;
+        }
     }
 
     .tures__title{
         font-size: 64px;
         font-style: normal;
+        font-family: $openSans;
         font-weight: 700;
         line-height: 109%;
         text-transform: uppercase;
@@ -46,10 +50,16 @@
             cursor: pointer;
 
             &:hover{
-                transform: translate(10px, -5px);
+                transform: translate(3px, -2px);
                 box-shadow: 5px 10px 35px 15px rgba(0, 0, 0, 0.25);
-
+                @include media($m1000){
+                    transform: none;
+                }
             }
+
+
+           
+
             img{
                 margin-bottom: 20px;
                 object-fit: cover;
@@ -63,6 +73,7 @@
                 font-weight: 400;
                 color: coral;
                 margin-bottom: 10px;
+                font-family: $openSans;
                } 
                p{
                 max-width: 400px;

@@ -1,6 +1,10 @@
 
 .slider{
     margin-bottom: 100px;
+
+    @include media($m1000){
+        margin-bottom: 50px;
+    }
     .swiper{
         .swiper-slide{
             position: relative;
