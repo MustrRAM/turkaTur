@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TurkaTur</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">turkaTur<span></span></a>
+                <ul class="menu">
+                    <li class="menu__list"><a href="#" class="menu__link menu__link--active">Главная</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">О нас</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Туры</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Квартиры</a></li>
+                    <span class="menu__close"></span>
+                </ul>
+                <div class="social-box">
+                    <a href="tel:+79995224122" class="nav__phone">+7 999 522 41 22</a>
+                    <div class="nav__social">
+                        <a href="#"><img src="image/header/telegram.svg" alt="Телеграм" width="25px"></a>
+                        <a href="#"><img src="image/header/whats.svg" alt="Телеграм" width="25px"></a>
+                        <a href="#"><img src="image/header/inst.svg" alt="Телеграм" width="25px"></a>
+                    </div>
+                    <button href="#" class="nav__button">Забронировать</button>
+                </div>
+                <button class="menu__open">
+                    menu
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(./image/main/slider1.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./image/main/slider2.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./image/main/slider3.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./image/main/slider4.jpg);"></div>
+                </div>
+                    <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="top">
+            <div class="container">
+                <h1>Turka<span>Tur</span></h1>
+                <p>Настоящие приключения начинаются здесь</p>
+                <div class="top__social">
+                    <a href="#"><img src="image/header/telegram.svg"  alt="Телеграм"  width="45px"></a>
+                    <a href="#"><img src="image/header/whats.svg" alt="Телеграм"  width="45px"></a>
+                    <a href="#"><img src="image/header/inst.svg" alt="Телеграм"  width="45px"></a>
+                </div>
+                <button class="top__button">Забронировать</button>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <div class="about">
+                        <h1 class="about__decor">About us</h1>
+                        <h3 class="about__hedaer">о Турагенстве</h3>
+                        <h1 class="about__title">Незабываемый <span>отдых</span> с нами!</h1>
+                        <div class="about__inner">
+                            <ul class="about__menu">
+                                <li>
+                                  <p>Вы можете приобрести у нас такие услуги как:</p>
+                                </li>
+                                <li class="about__list"><a href="#" class="about__link">
+                                    Съем квартиры, Аппартоментов.</a></li>
+                                <li class="about__list"><a href="#" class="about__link">Экскурсия с гидом по красивейшим уголкам Дагестана.</a></li>
+                                <li class="about__list"><a href="#" class="about__link">Катание на Лошадях</a></li>
+                                <li class="about__list"><a href="#" class="about__link">Катание на Квадроциклах по горам</a></li>
+                            </ul>
+                            <div class="about__slider">
+                                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                                    <div class="splide__track">
+                                          <ul class="splide__list"> 
+                                              <li class="splide__slide"><img src="image/main/horse1.jpg"  width="600px" height="400px" alt=""></li>
+                                              <li class="splide__slide"><img src="image/main/about2.jpg"  width="600px" height="400px" alt=""></li>
+                                              <li class="splide__slide"><img src="image/main/about3.jpeg" width="600px" height="400px" alt=""></li>
+                                              <li class="splide__slide"><img src="image/main/about4.jpg" width="600px" height="400px" alt=""></li>
+                                          </ul>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/slider2.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

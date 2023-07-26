@@ -1,0 +1,106 @@
+.info{
+    margin-bottom: 100px;
+    position: relative;
+
+    .about{
+        color: #000;
+        .about__decor{
+            color: #F5F5F5;
+            font-size: 170px;
+            font-weight: 700;
+            line-height: 119.7%; 
+            text-transform: uppercase;
+            position: absolute;
+            top: 15%;
+            right: 4%;
+            z-index: -1;
+
+            @include media($m800){
+                display: none;
+            }
+        }
+
+        .about__hedaer{
+            color: #C4C4C4;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            display: block;
+            max-width: max-content;
+            margin-bottom: 15px;
+            
+            @include media($m500){
+                letter-spacing: 6px;
+            }
+          
+        }
+
+        .about__title{
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 109%;
+            text-transform: uppercase;
+            max-width: 850px;
+            @include media($m500){
+                font-size: 30px;
+            }
+            span{
+                color: brown;
+            }
+            margin-bottom: 50px;
+        }
+        .about__inner{
+            display: flex;
+            justify-content: space-between;
+            @include media($m1000){
+                flex-direction: column;
+            }
+            .about__menu{
+                flex-basis: 600px;
+
+                @include media($m1000){
+                    flex-basis: 0;
+                    margin-bottom: 50px;
+                }
+                p{
+                    font-size: 36px;
+                    max-width: 400px;
+                }
+                display: flex;
+                flex-direction: column; 
+                gap: 20px;
+                
+                .about__list{
+                  
+
+                    .about__link{
+
+                        font-size: 20px;
+                        font-weight: 500;
+                        transition: all  0.3s ;
+                        &:hover{
+                            color:blueviolet;
+                            transform: translate(3px, -5px);
+
+                        }
+                    }
+                }
+
+               
+            }
+            .about__slider{
+                max-width: 600px; 
+                img{
+                    max-width: 100%;
+                    object-fit: cover;
+                    border-radius: 50px;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+body{
+    color: #fff;
+}
+
+.body--active{
+    overflow: hidden;
+}
+
+
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+.main{
+    transition: all 0.5s;
+}
+
+.main.main--active{ 
+    filter: blur(3px);
+
+}

@@ -1,0 +1,18 @@
+@mixin button($width){
+    width: $width;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 142%;
+    display: block;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    color: inherit;
+}
+
+@mixin media($m800){
+    @media(max-width:$m800){
+        @content;
+    }
+}
