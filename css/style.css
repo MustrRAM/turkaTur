@@ -77,7 +77,8 @@ body {
     color: #000;
     position: absolute;
     width: 100%;
-    height: 50vh;
+    height: -moz-max-content;
+    height: max-content;
     left: 0;
     right: 0;
     top: 0;
@@ -88,9 +89,9 @@ body {
   .header .nav .menu.menu--active {
     transform: translateY(0);
   }
-}
-.header .nav .menu .menu__list:first-child {
-  margin-top: 20%;
+  .header .nav .menu .menu__list:first-child {
+    margin-top: 20%;
+  }
 }
 .header .nav .menu .menu__link {
   transition: transform 0.3s;
@@ -418,4 +419,92 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50px;
+}
+
+.tures {
+  margin-bottom: 100px;
+  color: #000;
+}
+.tures .tures__header {
+  color: #C4C4C4;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  display: block;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-bottom: 15px;
+}
+.tures .tures__title {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 109%;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.tures .tures__title span {
+  color: brown;
+}
+@media (max-width: 500px) {
+  .tures .tures__title {
+    font-size: 30px;
+  }
+}
+.tures .tures__cards-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.tures .tures__cards-menu .tures__cards-list {
+  box-shadow: #000 5px 5px 5px 5px;
+  max-width: 400px;
+  box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.tures .tures__cards-menu .tures__cards-list:hover {
+  transform: translate(10px, -5px);
+  box-shadow: 5px 10px 35px 15px rgba(0, 0, 0, 0.25);
+}
+.tures .tures__cards-menu .tures__cards-list img {
+  margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.tures .tures__cards-menu .tures__cards-list .tures__cards-content {
+  padding: 10px;
+}
+.tures .tures__cards-menu .tures__cards-list .tures__cards-content h4 {
+  font-size: 28px;
+  font-weight: 400;
+  color: coral;
+  margin-bottom: 10px;
+}
+.tures .tures__cards-menu .tures__cards-list .tures__cards-content p {
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+.tures .tures__more {
+  display: flex;
+  justify-content: end;
+}
+.tures .tures__more a {
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.tures .tures__more a:hover {
+  color: blueviolet;
 }/*# sourceMappingURL=style.css.map */

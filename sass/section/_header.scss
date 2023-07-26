@@ -58,7 +58,7 @@
                 color: #000;
                 position: absolute;
                 width: 100%;
-                height: 50vh;
+                height: max-content;
                 left: 0;
                 right: 0;
                 top: 0;
@@ -70,13 +70,14 @@
                 &.menu--active{
                     transform: translateY(0);
                 }
-            }
-
-            .menu__list{
-                &:first-child{
-                    margin-top: 20%;
+                .menu__list{
+                    &:first-child{
+                        margin-top: 20%;
+                    }
                 }
             }
+
+          
 
             .menu__link{
                 transition: transform 0.3s;
