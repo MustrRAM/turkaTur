@@ -213,6 +213,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 1000px) {
+  .slider .swiper .swiper-slide {
+    height: 100vh;
+  }
+}
 .slider .swiper .swiper-slide::after {
   content: "";
   display: block;
