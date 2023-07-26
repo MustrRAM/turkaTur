@@ -23,6 +23,9 @@
             font-weight: 700;
             line-height: 110%;
             font-size: 32px;
+            @include media($m500){
+                margin-right: 30px;
+            }
            
             &.logo--active{
                 color: #000;
@@ -47,11 +50,12 @@
             display: flex;
             gap: 30px;
             flex: 2;
+            
 
             @include media($m1000){
                 flex-direction: column;
                 background: #fff;
-                justify-content: center;
+                justify-content: end;
                 color: #000;
                 position: absolute;
                 width: 100%;

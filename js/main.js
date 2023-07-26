@@ -23,6 +23,7 @@ mainBlur.addEventListener('click', function(){
     menu.classList.remove('menu--active');
     mainBlur.classList.remove('main--active');
     noScroll.classList.remove('body--active');
+    logo.classList.remove('logo--active');
 })
 
 

@@ -47,6 +47,11 @@ body {
   position: relative;
   z-index: 8;
 }
+@media (max-width: 500px) {
+  .header .nav .logo {
+    margin-right: 30px;
+  }
+}
 .header .nav .logo.logo--active {
   color: #000;
 }
@@ -69,7 +74,7 @@ body {
   .header .nav .menu {
     flex-direction: column;
     background: #fff;
-    justify-content: center;
+    justify-content: end;
     color: #000;
     position: absolute;
     width: 100%;
