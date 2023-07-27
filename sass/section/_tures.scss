@@ -1,6 +1,25 @@
 .tures{
     margin-bottom: 100px;
     color: #000;
+    position: relative;
+
+    .tures__decor{
+        color: #F5F5F5;
+        font-size: 170px;
+        font-weight: 700;
+        line-height: 119.7%; 
+        text-transform: uppercase;
+        position: absolute;
+        top: 4%;
+        left: 15%;
+        z-index: -1;
+
+        @include media($m800){
+            display: none;
+        }
+    }
+
+
     .tures__header{
         color: #C4C4C4;
         font-size: 20px;
@@ -24,11 +43,15 @@
         font-weight: 700;
         line-height: 109%;
         text-transform: uppercase;
+        margin-bottom: 50px;
+
         span{
             color: brown;
         }
-        margin-bottom: 50px;
 
+        @include media($m800){
+            font-size: 50px;
+        }
         @include media($m500){
             font-size: 30px;
         }

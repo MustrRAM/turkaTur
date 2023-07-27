@@ -5,7 +5,7 @@
     top: 0;
     margin: 0 auto;
     z-index: 10;
- 
+    color: #fff;
 
 
     .nav{
@@ -27,7 +27,7 @@
                 margin-right: 30px;
             }
              position: relative;
-            z-index: 8;
+             z-index: 8;
 
           
             span{
@@ -223,5 +223,62 @@
         }
 
 
+    }
+}
+
+.header.header__apartaments{
+    position: static;
+    z-index: 10;
+    background: #000000e5;
+    min-height: 80px;
+    margin-bottom: 50px;
+    .nav{
+
+        .menu{
+           @include media($m1000){
+            display: flex;
+            flex-direction: row;
+            position: static;
+            transform: initial;
+            background:transparent;
+            height: auto;
+            padding: 0;
+            transition: none;
+            color: #fff;
+            width: auto;
+
+            .menu__list:first-child{
+                margin-top: 0;
+            }
+
+            .menu__link{
+                font-size: 22px;
+                padding: 10px;
+                &::after{
+                    background: #fff;
+                }
+            }
+
+            }
+
+        }
+
+
+        .social-box{
+            @include media($m1000){
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .nav__phone{
+                    display: none;
+                }
+
+            }
+        }
+
+        .menu__open{
+            display: none;
+        }
     }
 }

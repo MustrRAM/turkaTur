@@ -50,7 +50,7 @@
             text-transform: uppercase;
             max-width: 850px;
             @include media($m800){
-                font-size: 45px;
+                font-size: 50px;
             }
             @include media($m500){
                 font-size: 30px;

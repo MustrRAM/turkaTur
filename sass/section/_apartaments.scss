@@ -1,6 +1,24 @@
 .apartaments{
     color: #000;
     margin-bottom: 100px;
+    position: relative;
+
+    .apartaments__decor{
+        color: #F5F5F5;
+        font-size: 170px;
+        font-weight: 700;
+        line-height: 119.7%; 
+        text-transform: uppercase;
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        z-index: -1;
+
+        @include media($m800){
+            display: none;
+        }
+    }
+
 
     .apartaments__header{
         color: #C4C4C4;

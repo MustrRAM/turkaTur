@@ -1,5 +1,8 @@
 .footer{
+    color: #fff;
     background: #232323;
+ 
+    z-index: 10;
     .footer__inner{
         display: grid;
         grid-template-columns: repeat(4, auto);
