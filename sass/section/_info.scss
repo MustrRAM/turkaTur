@@ -68,7 +68,9 @@
             }
             .about__menu{
                 flex-basis: 600px;
-
+                display: flex;
+                flex-direction: column; 
+                gap: 20px;
                 @include media($m1000){
                     flex-basis: 0;
                     margin-bottom: 50px;
@@ -82,9 +84,7 @@
                         font-size: 27px;
                     }
                 }
-                display: flex;
-                flex-direction: column; 
-                gap: 20px;
+                
                 
                 .about__list{
                     .about__link{

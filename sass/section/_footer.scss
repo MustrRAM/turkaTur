@@ -5,20 +5,33 @@
         grid-template-columns: repeat(4, auto);
         padding: 60px;
 
-        .logo{
-            margin-right: 60px;
-            color: rgb(255, 255, 255);
+        @include media($m1000){
+            grid-template-columns: repeat(2, auto);
+            gap: 15px;
+        }
+
+        @include media($m800){
+            grid-template-columns: repeat(1, auto);
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            font-weight: 700;
-            line-height: 110%;
-            font-size: 32px;
-            margin-bottom: 20px;
+            padding: 40px;
         }
 
         .footer__logo-box{
+            .logo{
+                color: rgb(255, 255, 255);
+                text-align: center;
+                font-weight: 700;
+                line-height: 110%;
+                font-size: 34px;
+                margin-bottom: 20px;
+            }
            .footer__social{
-            display: flex;
-            gap: 15px;
+            a + a{
+                margin-left: 15px;
+            }
            }
         }
 
@@ -29,11 +42,12 @@
             flex-direction: column;
             justify-content: start;
             transition: all 0.2s;
+            font-size: 18px;
             li:first-child{
                 margin-bottom: 20px;
                 color:chocolate;
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 20px;
             }
             
             li + li{
