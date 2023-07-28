@@ -19,9 +19,34 @@
             position: absolute;
         }
 
+        .menu{
+            .menu__link::after{
+                background: #000;
+            }
+        }
+
         .logo{
             color: #000;
         }
+
+        .nav{
+            .nav__button{
+                border: 1px solid #000;
+
+                &:hover{
+                    background: #000;
+                    color: #fff;
+                }
+            }
+
+            .nav__social{
+                svg{
+                    fill: #000;
+                }
+            }
+        }
+      
+
     }
     
 
@@ -140,11 +165,6 @@
               
             }
 
-            .menu__link.menu__link--active{
-                &::after{
-                    opacity: 1;
-                }
-            }
 
            
         }

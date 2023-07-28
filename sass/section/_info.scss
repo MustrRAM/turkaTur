@@ -5,6 +5,26 @@
         margin-bottom: 50px;
     }
 
+
+    .splide{
+        
+        .splide__arrow{
+            background-color: #53454894;
+            width: 70px;
+            height: 70px;
+            @include media($m800){
+                width: 40px;
+                height: 40px;
+            }
+
+            svg{
+                width: 30px;
+                height: 30px;
+                fill: #fff;
+            }
+        }
+    }
+
     .about{
         color: #000;
         .about__decor{
