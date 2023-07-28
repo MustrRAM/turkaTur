@@ -29,3 +29,4 @@ const splide = new Splide( '.splide', {
 splide.sync(splide2);
 splide.mount();
 splide2.mount();
+

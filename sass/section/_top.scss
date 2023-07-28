@@ -10,7 +10,11 @@
    
 
     @include media($m800){
-        top: 200px;
+        top: 170px;
+    }
+
+    @media(max-height:500px){
+        top: 100px;
     }
 
     h1{

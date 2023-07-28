@@ -1,11 +1,13 @@
-var splide = new Splide( '.splide', {
+const splide = new Splide( '.splide', {
     type   : 'loop',
     perPage: 1,
     perMove: 1,
     pagination:false,
     type:'fade',
-  } );
-  
+    autoplay:{
+      speed:10,
+    }
+  });
   splide.mount();
 
 
