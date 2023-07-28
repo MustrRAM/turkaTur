@@ -84,13 +84,15 @@
            
 
             img{
-                margin-bottom: 20px;
                 object-fit: cover;
                 max-width: 100%;
                 border-radius: 20px 20px 0px 0px;
             }
             .tures__cards-content{
-                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                max-height: 100%;
                h4{
                 font-size: 28px;
                 font-weight: 400;
@@ -101,7 +103,15 @@
                p{
                 max-width: 400px;
                 margin-bottom: 10px;
+                min-height: 225px;
+                line-height: 140%;
                }
+               
+              .tures__next{
+                color: blueviolet;
+                display: flex;
+                justify-content: end;
+              }
             }
         }
     }

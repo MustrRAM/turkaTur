@@ -47,7 +47,7 @@ topButton.addEventListener('click', function(){
     topButton.classList.add('hidden');
 });
 
-
+console.log(topButton)
 
 let options = {
     threshold: [0.5] };
