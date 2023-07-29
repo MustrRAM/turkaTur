@@ -38,12 +38,6 @@
                     color: #fff;
                 }
             }
-
-            .nav__social{
-                svg{
-                    fill: #000;
-                }
-            }
         }
       
 
@@ -234,12 +228,37 @@
             
             .nav__social{
                 display: none;
+                a{
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg{
+                        width: 25px;
+                        height:25px;
+                    }
+                }
+
+                a:nth-child(1){
+                    background: #2F89CE;
+                }
+
+                a:nth-child(2){
+                    background: #48C95F;
+                }
+
+                a:nth-child(3){
+                    background: linear-gradient(#EEA054, #D64763, #B62A99);
+                }
             }
 
             .nav__social.socail--active{
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 15px;
 
             }
 
@@ -267,7 +286,7 @@
 
 
 
-.header.header__apartaments{
+.header.header__page{
     position: static;
     z-index: 10;
     background: #000000e5;

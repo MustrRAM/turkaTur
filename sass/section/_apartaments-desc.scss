@@ -20,6 +20,7 @@
     font-weight: 700;
     @include media($m500){
         font-size: 28px;
+        max-width: 90%;
     }
 }
 
@@ -34,7 +35,6 @@
 
     @include media($m1000){
         margin-left: 15px;
-
     }
 
 
@@ -103,6 +103,12 @@
                 cursor: pointer;
             }
         }
+        p{
+            max-width: max-content;
+            @include media($m500){
+                font-size: 14px;
+            }
+        }
     }
 
 }
@@ -137,9 +143,18 @@
 
 .apartaments__map{
     margin-bottom: 20px;
-   a{
-    margin-bottom: 20px;
-   }
+
+     
+    a{
+        text-decoration: underline;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 18px;
+      
+    }
+   
 
     .apartaments__map-inner{
         iframe{

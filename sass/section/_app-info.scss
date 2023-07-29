@@ -81,6 +81,10 @@
 
     #splider1{
        
+        .splide__slide img{
+            border-radius: 25px;
+        }
+
         .splide__arrow{
             background-color: #53454894;
             width: 70px;
@@ -99,6 +103,21 @@
     
     }
 
+    .nav__social{
+        display: block;
+
+
+    }
  
 
+
+    #slider2{
+        li{
+            border-radius: 20px;
+        }
+        li.is-active{
+            border: 2px solid #000;
+        }
+    }
+   
 }
