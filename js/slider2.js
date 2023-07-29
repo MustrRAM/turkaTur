@@ -12,7 +12,7 @@ const splide = new Splide( '.splide', {
 
 
 
-  
+
 // Слайдеры секции "tures"
 
 // 1 слайдер
@@ -38,3 +38,10 @@ const splide4 =  new Splide( '#slider4', {
 })
 
 splide4.mount();
+
+
+const splide5 = new Splide( '#slider5', {
+  type:'fade',
+  pagination:false,
+ })
+ splide5.mount();
