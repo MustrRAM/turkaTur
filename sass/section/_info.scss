@@ -1,7 +1,7 @@
 .info{
     margin-bottom: 100px;
     position: relative;
-    @include media($m1000){
+    @include media($m1100){
         margin-bottom: 50px;
     }
 
@@ -63,71 +63,80 @@
         .about__title{
             font-family: $openSans;
 
-            font-size: 64px;
             font-style: normal;
-            font-weight: 700;
-            line-height: 129%;
+            line-height: 145%;
             text-transform: uppercase;
-            max-width: 850px;
+            max-width: 1000px;
+            margin-bottom: 30px;
+
+            font-size: 48px;
+            font-weight: 900;
+
             @include media($m800){
-                font-size: 50px;
+                font-size: 32px;
+                margin-bottom: 0px;
+                max-width: 100%;
             }
-            @include media($m500){
-                font-size: 30px;
-            }
+           
             span{
                 color: brown;
+                text-transform: initial;
             }
-            margin-bottom: 50px;
         }
         .about__inner{
             display: flex;
             justify-content: space-between;
-            @include media($m1000){
+            @include media($m1100){
                 flex-direction: column;
             }
             .about__menu{
                 flex-basis: 600px;
                 display: flex;
                 flex-direction: column; 
-                gap: 20px;
-                @include media($m1000){
+                gap: 30px;
+                @include media($m1100){
                     flex-basis: 0;
                     margin-bottom: 50px;
                 }
-                p{
-                    font-size: 36px;
-                    font-weight: 700;
-                    font-family: $openSans;
-
-                    @include media($m800){
-                        font-size: 27px;
-                    }
-                }
+               
                 
                 
                 .about__list{
-                    .about__link{
-
-                        font-size: 20px;
-                        font-weight: 500;
-                        transition: all  0.3s ;
-                        &:hover{
-                            color:blueviolet;
-                            transform: translate(3px, -5px);
-
+                    h3{
+                        font-size: 26px;
+                        margin-bottom: 5px;
+                        
+                        @include media($m500){
+                            font-size: 20px;
                         }
                     }
+
+                    p{
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-family: $openSans;
+                        line-height: 145%;
+                        padding: 10px 0 0 20px;
+                      
+    
+                        @include media($m500){
+                            font-size: 18px;
+                        }
+                    }
+                   
                 }
 
                
             }
             .about__slider{
                 max-width: 600px; 
-                img{
+                @include media($m1100){
                     max-width: 100%;
+                }
+                img{
                     object-fit: cover;
                     border-radius: 50px;
+                    width: 100%;
                 }
             }
             

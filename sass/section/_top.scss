@@ -9,7 +9,7 @@
 
    
 
-    @include media($m800){
+    @include media($m1100){
         top: 170px;
     }
 
@@ -71,7 +71,7 @@
         display: none;
         max-width: 100%;
 
-        @include media($m1000){
+        @include media($m1100){
             display: block;
             font-size: 22px;
             background: #fff;

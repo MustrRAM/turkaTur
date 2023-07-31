@@ -51,22 +51,14 @@
 
         .menu{
             display: flex;
+            align-items: center;
             gap: 15px;
             flex: 2;
             z-index: 8;
 
-            .logo{
-                color: #000;
-                padding-top: 5px;
-                display: none;
-               
-
-                @include media($m1000){
-                    display: flex;
-                }
-            }
-
             @include media($m1100){
+                align-items: start;
+
                 flex-direction: column;
                 background: #fff;
                 color: #000;
@@ -95,6 +87,19 @@
                     }
                 }
             }
+           
+            .logo{
+                color: #000;
+                padding-top: 5px;
+                display: none;
+               
+
+                @include media($m1100){
+                    display: flex;
+                }
+            }
+
+           
 
           
 
@@ -103,6 +108,9 @@
                 position: relative;
                 padding: 5px;
                 font-size: 20px;
+
+               
+
                 &::after{
                     content: "";
                     width: 70%;
@@ -113,7 +121,7 @@
                     bottom: 0;
                     opacity: 0;
                     transition: all 0.3s;
-                    @include media($m1000){
+                    @include media($m1100){
                         background: #000;
                     }
                 }
@@ -121,7 +129,7 @@
                     opacity: 1;
                 }
 
-                @include media($m800){
+                @include media($m1100){
                     &:hover{
                         transform: translate(7px);
                     }
@@ -145,7 +153,7 @@
             color: #fff;
             text-transform: uppercase;
             display: none;
-            @include media($m1000){
+            @include media($m1100){
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -161,7 +169,7 @@
         .menu__close{
             display: none;
 
-            @include media($m800){
+            @include media($m1100){
                 display: block;
                 width: 20px;
                 height: 20px;
@@ -188,7 +196,7 @@
             display: flex;
             align-items: center;
 
-            @include media($m1000){
+            @include media($m1100){
                 display: none;
             }
 
@@ -258,7 +266,7 @@
         background: #ffffff;
         color:#000;
         box-shadow: 0 3px 5px rgba(8, 14, 23, 0.3);
-        @include media($m1000){
+        @include media($m1100){
             background: transparent;
             position: absolute;
         }
@@ -294,8 +302,8 @@
 
 
 
-
-.header.header__page{
+.header.header__tures,
+.header.header__apartaments{
     position: static;
     z-index: 10;
     background: #000000e5;
@@ -305,7 +313,7 @@
 
         .menu{
 
-           @include media($m1000){
+           @include media($m1100){
             display: flex;
             flex-direction: row;
             position: static;
@@ -320,7 +328,7 @@
             }
 
             .menu__list:first-child{
-                @include media($m1000){
+                @include media($m1100){
                     margin-top: 0;
                 }
               
@@ -328,7 +336,7 @@
 
             .menu__link{
             cursor: pointer;
-                @include media($m1000){
+                @include media($m1100){
                     font-size: 22px;
                     padding: 10px;
                     &::after{
@@ -342,7 +350,7 @@
 
 
         .social-box{
-            @include media($m1000){
+            @include media($m1100){
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -357,5 +365,12 @@
         .menu__open{
             display: none;
         }
+    }
+}
+
+.header.header__tures{
+    margin-bottom: 15px;
+    @include media($m800){
+        margin-bottom: 0;
     }
 }

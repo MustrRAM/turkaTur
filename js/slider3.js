@@ -3,6 +3,7 @@ const splide = new Splide( '.splide', {
     perPage: 1,
     perMove: 1,
     pagination:false,
+    lazyLoad:'nearby',
     type:'fade',
   } );
   

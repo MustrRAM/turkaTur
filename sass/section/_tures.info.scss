@@ -1,0 +1,23 @@
+.tures__info{
+        margin-bottom: 100px;
+    .tures__info-inner{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        gap: 20px;
+
+        .tures__info-left{
+            flex-basis: 700px;
+            h1{
+                margin-bottom: 15px;
+            }
+            p{
+                max-width: 500px;
+                line-height: 145%;
+                font-size: 16px;
+            }
+        }
+    }
+
+
+}

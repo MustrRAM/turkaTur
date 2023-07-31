@@ -1,0 +1,64 @@
+.preview{
+    margin-bottom: 50px;
+    .preview__inner{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 70vh;
+        border-radius: 30px;
+        margin: 0 15px;
+        padding: 0px 0 80px 80px;
+        color: #fff;
+        display: grid;
+        justify-content: start;
+        align-items: end;
+
+        @include media($m800){
+            padding: 0px 0 40px 0px;
+            border-radius: 0;
+            margin: 0;
+        }
+       
+        .preview__texbox{
+          
+            h1{
+                justify-self: start;
+                font-size: 45px;
+                font-weight: 700;
+                font-family: $openSans;
+                margin-bottom: 5px;
+
+                @include media($m800){
+                    font-size: 30px;
+                }
+
+                @include media($m500){
+                    font-size: 24px;
+                }
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 22px;
+                font-style: italic;
+                opacity: 0.8;
+                font-family: 'Montserrat';
+                @include media($m500){
+                    font-size: 18px;
+                }
+            }
+            span{
+                color:#ff4500;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 60px;
+
+                @include media($m500){
+                    font-size: 40px;
+                    display: block;
+                }
+            }
+        }
+
+    }
+}
