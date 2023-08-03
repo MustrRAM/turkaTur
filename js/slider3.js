@@ -31,3 +31,8 @@ splide.sync(splide2);
 splide.mount();
 splide2.mount();
 
+const splide3 = new Splide( '#slider3', {
+  type:'fade',
+  pagination:false,
+})
+splide3.mount();

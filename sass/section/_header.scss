@@ -8,10 +8,6 @@
     color: #fff;
     transition: all 0.2s;
 
-
-  
-    
-
     .nav{
         padding: 20px 0;
         align-items: center;
@@ -306,7 +302,9 @@
 .header.header__apartaments{
     position: static;
     z-index: 10;
-    background: #000000e5;
+    background: #ffffffe5;
+    box-shadow: 0 3px 5px rgba(8, 14, 23, 0.3);
+    color: #000;
     min-height: 80px;
     margin-bottom: 50px;
     .nav{
@@ -322,7 +320,7 @@
             height: auto;
             padding: 0;
             transition: none;
-            color: #fff;
+            color: #000000;
             width: auto;
 
             }
@@ -335,21 +333,29 @@
             }
 
             .menu__link{
-            cursor: pointer;
+                cursor: pointer;
                 @include media($m1100){
                     font-size: 22px;
                     padding: 10px;
-                    &::after{
-                        background: #fff;
-                    }
                 }
-             
+                &::after{
+                    background: #000000;
+                }
             }
 
         }
 
 
         .social-box{
+
+            .nav__button{
+                border: 1px solid #000;
+
+                &:hover{
+                    background: #000;
+                    color: #fff;
+                }
+            }
             @include media($m1100){
                 display: flex;
                 flex-direction: column;
@@ -369,8 +375,5 @@
 }
 
 .header.header__tures{
-    margin-bottom: 15px;
-    @include media($m800){
-        margin-bottom: 0;
-    }
+   margin-bottom: 0;
 }
