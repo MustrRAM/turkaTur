@@ -1,0 +1,55 @@
+.travel{
+    margin-bottom: 100px;
+    .travel__inner{
+        background-image: url(../../image/main/travel-bg.jpg);
+        background-position:center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        position: relative;
+        @include media($m800){
+            background-position:right;
+        }
+        &::before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+    
+            background: #00000030;
+            z-index: 5;
+        }
+    
+        h1{
+            position: relative;
+            color: #fff;
+            font-size: 104px;
+            text-align: center;
+            text-transform: uppercase;
+            z-index: 10;
+            margin: 0 auto;
+            max-width: max-content;
+            @include media($m1100){
+                font-size: 78px;
+            }
+
+            @include media($m800){
+                font-size: 47px;
+            }
+
+            @include media($m500){
+                font-size: 28px;
+            }
+        }
+    }
+}
+
