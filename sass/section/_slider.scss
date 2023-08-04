@@ -7,14 +7,14 @@
     .swiper{
         .swiper-slide{
             position: relative;
-            height: 80vh;
+            height: 80dvh;
             width: 100%;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
 
             @include media($m1000){
-                height: 100vh;
+                height: 100dvh;
             }
         
             &::after{
