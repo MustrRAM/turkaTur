@@ -11,7 +11,7 @@
         height: 100dvh;
         position: relative;
         @include media($m800){
-            background-position:right;
+        background-attachment: initial;
         }
         &::before{
             content: "";
