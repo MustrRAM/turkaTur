@@ -6,24 +6,6 @@
     }
 
 
-    .splide{
-        
-        .splide__arrow{
-            background-color: #53454894;
-            width: 70px;
-            height: 70px;
-            @include media($m800){
-                width: 40px;
-                height: 40px;
-            }
-
-            svg{
-                width: 30px;
-                height: 30px;
-                fill: #fff;
-            }
-        }
-    }
 
     .about{
         color: #000;
@@ -34,7 +16,7 @@
             line-height: 119.7%; 
             text-transform: uppercase;
             position: absolute;
-            top: 10%;
+            top: 6%;
             right: 4%;
             z-index: -1;
 
@@ -86,25 +68,37 @@
         .about__inner{
             display: flex;
             justify-content: space-between;
-            @include media($m1100){
-                flex-direction: column;
-            }
+            flex-direction: column;
+            
             .about__menu{
-                flex-basis: 600px;
-                display: flex;
-                flex-direction: column; 
-                gap: 30px;
-                @include media($m1100){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                justify-content: center;
+                gap: 80px;
+                margin-bottom: 50px;
+                @include media($m800){
                     flex-basis: 0;
-                    margin-bottom: 50px;
+                    grid-template-columns: repeat(1, 1fr);
                 }
                
                 
                 
                 .about__list{
+                    max-width: 500px;
+                    justify-self: center;
+                    @include media($m800){
+                        padding-top: 0;
+                    }
+
+                    img{
+                        margin-bottom: 25px;
+                        max-width: 100%;
+                    }
+
                     h3{
                         font-size: 26px;
-                        margin-bottom: 5px;
+                        margin-bottom: 10px;
                         
                         @include media($m500){
                             font-size: 20px;
@@ -116,23 +110,26 @@
                         font-weight: 400;
                         font-family: $openSans;
                         line-height: 145%;
-                        padding: 10px 0 0 20px;
-                      
     
                         @include media($m500){
                             font-size: 18px;
+                            justify-self: end;
                         }
                     }
                    
                 }
 
+                .about__list:first-child{
+                    padding-top: 70px;
+                }
+                .about__list:last-child{
+                    padding-top: 70px;
+                }
+             
                
             }
             .about__slider{
-                max-width: 600px; 
-                @include media($m1100){
-                    max-width: 100%;
-                }
+              
                 img{
                     object-fit: cover;
                     border-radius: 50px;
@@ -140,6 +137,26 @@
                 }
             }
             
+        }
+    }
+
+    
+    .splide{
+        
+        .splide__arrow{
+            background-color: #53454894;
+            width: 70px;
+            height: 70px;
+            @include media($m800){
+                width: 40px;
+                height: 40px;
+            }
+
+            svg{
+                width: 30px;
+                height: 30px;
+                fill: #fff;
+            }
         }
     }
 }
