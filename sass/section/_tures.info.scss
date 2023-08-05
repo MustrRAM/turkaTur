@@ -20,7 +20,22 @@
 
             @include media($m800){
                 font-size: 26px;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .tures__info-subtitle{
+            font-size: 36px;
+            margin-bottom: 50px;
+            font-family: $openSans;
+
+            span{
+                color: rgb(178, 132, 100);
+            }
+
+            @include media($m800){
+                font-size: 24px;
+                margin-bottom: 30px;
             }
         }
 
@@ -34,15 +49,20 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 60px;
+                gap: 80px;
 
                 @include media($m800){
                     flex-direction: column;
+                    gap: 40px;
 
                         img:first-child{
                         order: 1;
                         }
                
+                }
+
+                img{
+                    border-radius:20px;
                 }
 
                 div{
@@ -52,11 +72,32 @@
                         text-align: center;
                     }
                     h3{
-                        font-size: 22px;  
+                        font-size: 26px;  
                         margin-bottom: 10px;
+                        position: relative;
+                        font-family: $openSans;
+                        @include media($m800){
+                            font-size: 22px;
+                        }
                     }
                     p{
-                        font-size: 18px;
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        line-height: 145%;
+                        position: relative;
+
+                        @include media($m800){
+                            border-top: 1px solid gray;
+                            border-bottom: 1px solid gray;
+                            padding: 5px 0  ;
+                        }
+                    }
+                    
+                    span{
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-style: italic;
+                        opacity: 0.7;
                     }
                 }
 

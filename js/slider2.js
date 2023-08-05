@@ -39,4 +39,29 @@ const splide4 =  new Splide( '#slider4', {
 
 splide4.mount();
 
+// 4 слайдер
 
+const splide5 =  new Splide( '#slider5', {
+  type:'fade',
+  pagination:false,
+})
+
+splide5.mount();
+
+// 5 слайдер
+
+const splide6 =  new Splide( '#slider6', {
+  type:'fade',
+  pagination:false,
+})
+
+splide6.mount();
+
+// 6 слайдер
+
+const splide7 =  new Splide( '#slider7', {
+  type:'fade',
+  pagination:false,
+})
+
+splide7.mount();
