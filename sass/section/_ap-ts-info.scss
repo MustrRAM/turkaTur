@@ -1,5 +1,18 @@
 .appartaments__info{
     margin-bottom: 30px;
+
+    .cooperation{
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        color: #000000bb;
+        span{
+            margin-left: 15px;
+            color: #000000e2;
+        }
+    }
+
     .apartaments__info-title{
         color: #153657;
         font-family: $openSans;

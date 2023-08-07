@@ -1,21 +1,12 @@
-const splide = new Splide( '.splide', {
-    type   : 'loop',
-    perPage: 1,
-    perMove: 1,
-    pagination:false,
-    type:'fade',
-    autoplay:{
-      speed:10,
-    }
-  });
-  splide.mount();
-
-
-
-
 // Слайдеры секции "tures"
 
 // 1 слайдер
+const splide = new Splide( '.splide', {
+    type:'fade',
+  });
+  splide.mount();
+
+// 2 слайдер
 
  const splide2 = new Splide( '#slider2', {
   type:'fade',
@@ -23,7 +14,7 @@ const splide = new Splide( '.splide', {
  })
  splide2.mount();
 
-// 2 слайдер
+// 3 слайдер
 
 const splide3 = new Splide( '#slider3', {
   type:'fade',
@@ -31,7 +22,8 @@ const splide3 = new Splide( '#slider3', {
 })
 splide3.mount();
 
-// 3 слайдер
+// 4 слайдер
+
 const splide4 =  new Splide( '#slider4', {
   type:'fade',
   pagination:false,
@@ -39,7 +31,7 @@ const splide4 =  new Splide( '#slider4', {
 
 splide4.mount();
 
-// 4 слайдер
+// 5 слайдер
 
 const splide5 =  new Splide( '#slider5', {
   type:'fade',
@@ -48,7 +40,7 @@ const splide5 =  new Splide( '#slider5', {
 
 splide5.mount();
 
-// 5 слайдер
+// 6 слайдер
 
 const splide6 =  new Splide( '#slider6', {
   type:'fade',
@@ -57,11 +49,19 @@ const splide6 =  new Splide( '#slider6', {
 
 splide6.mount();
 
-// 6 слайдер
+// 7 слайдер (отзывы)
 
 const splide7 =  new Splide( '#slider7', {
-  type:'fade',
   pagination:false,
+    type   : 'loop',
+    focus  : 'center',
+    perPage: true,
+    perMove: 1,
+    autoHeight:true,
+    gap:40,
+    breakpoints: {
+     500: {perPage: 1,}
+    }
 })
 
 splide7.mount();

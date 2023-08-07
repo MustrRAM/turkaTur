@@ -57,6 +57,20 @@
             justify-content: center;
             align-items: center;
             gap: 15px;
+            flex-wrap: wrap;
+            max-width: 290px;
+            margin: 0 auto;
+        }
+
+        .phone-box{
+            display: block;
+            color: #fff;
+            font-size: 24px;
+
+            a{
+                display: flex;
+                align-items: center;
+            }
         }
 
         a{
