@@ -12,10 +12,6 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-
-            @include media($m1000){
-                height: 100dvh;
-            }
         
             &::after{
                 content: "";
