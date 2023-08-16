@@ -203,6 +203,7 @@
             .nav__phone-link{
                 display: flex;
                 align-items: center;
+                margin-right: 20px;
                 svg{
                     path{ fill: #fff;}
                 }
@@ -248,7 +249,6 @@
                @include button(150px);
                 padding: 8px 15px;
                 transition: all 0.3s;
-                margin-left: 20px;
 
                 &:hover{
                     background: #ffffff;
@@ -366,6 +366,9 @@
 
 
         .social-box{
+            .nav__phone{
+                margin-right: 20px;
+            }
 
             .nav__button{
                 border: 1px solid #000;
@@ -376,9 +379,7 @@
                 }
             }
 
-            .nav__social.socail--active{
-                margin-left: 20px;
-            }
+          
            
             @include media($m1100){
                 display: flex;

@@ -1,0 +1,81 @@
+.gallery{
+    padding: 50px 0;
+    background: #f2f2f2;
+    .gallery__title{
+     text-align: center;
+     font-size: 46px;
+     font-weight: 400;
+     font-family: $openSans;
+     margin-bottom: 50px;
+    }
+
+    .gallery__text{
+        text-align: center;
+        max-width: 500px;
+        font-size: 22px;
+        margin: 0 auto;
+        opacity: 0.7;
+        margin-bottom: 50px;
+    }
+
+
+    .gallery__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 50px;
+
+        @include media($m800){
+            gap: 80px;
+        }
+        .card{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            @include media($m800){
+                flex-direction: column;
+            }
+
+            img{
+                max-width: 100%;
+            }
+
+            .card-textbox{
+                max-width: 400px;
+                h2{
+                    margin-bottom: 20px;
+                    font-size: 30px;
+
+                    @include media($m800){
+                        font-size: 26px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 145%;
+                    @include media($m800){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .reviews__link{
+        border: 1px solid #000;
+        border-radius: 15px;
+        padding: 10px;
+        transition: all 0.3s;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        max-width: 300px;
+        &:hover{
+            background: #fff;
+        }
+    }
+
+}
