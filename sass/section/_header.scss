@@ -18,31 +18,6 @@
         
         .logo{
             margin-right: 60px;
-            font-family: 'Montserrat';
-            color: #FFF;
-            text-align: center;
-            font-weight: 700;
-            line-height: 110%;
-            font-size: 32px;
-            @include media($m500){
-                margin-right: 30px;
-            }
-             position: relative;
-             z-index: 8;
-
-          
-            span{
-                background: #12074e92;
-                border-radius: 50%;
-                width:25px;
-                height: 25px;
-                position: absolute;
-                z-index: -1;
-                right: 13px;
-                top: 8px;
-
-               
-            }
         }
 
 

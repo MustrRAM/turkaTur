@@ -20,5 +20,54 @@
         url(../../fonts/OpenSans-Bold.woff) format("woff");
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 800; 
+    font-style: normal;
+    font-display: swap;
+    src: local('Open Sans Extra Bold'), 
+         local('OpenSans-ExtraBold'),
+         url(../../fonts/OpenSans-ExtraBold.woff2) format("woff2"),
+         url(../../fonts/OpenSans-ExtraBold.woff) format("woff");
+}
+
+
+// Montserrat
+
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src:local('Montserrat Regular'), 
+        local('Montserrat-Regular'),
+        url(../../fonts/Montserrat-Regular.woff2) format("woff2"),
+        url(../../fonts/Montserrat-Regular.woff) format("woff");
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: local('Montserrat Italic'), 
+         local('Montserrat-Italic'),
+         url(../../fonts/Montserrat-Italic.woff2) format("woff2"), 
+         url(../../fonts/Montserrat-Italic.woff) format("woff");
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700; 
+    font-style: normal;
+    font-display: swap;
+    src: local('Montserrat Bold'),
+         local('Montserrat-Bold'),
+         url(../../fonts/Montserrat-Bold.woff2) format("woff2"),
+         url(../../fonts/Montserrat-Bold.woff) format("woff");
+}

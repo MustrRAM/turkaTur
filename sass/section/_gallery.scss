@@ -1,6 +1,12 @@
 .gallery{
     padding: 50px 0;
     background: #f2f2f2;
+
+    img{
+        max-width: 100%;
+        object-fit: cover;
+    }
+
     .gallery__title{
      text-align: center;
      font-size: 46px;
@@ -39,9 +45,7 @@
                 flex-direction: column;
             }
 
-            img{
-                max-width: 100%;
-            }
+           
 
             .card-textbox{
                 max-width: 400px;
