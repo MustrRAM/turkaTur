@@ -119,6 +119,12 @@
                 font-family: $openSans;
                 height: 70px;
                 line-height: 110%;
+                
+                @include media($m500){
+                    height: initial;
+                    margin-bottom: 20px;
+                }
+
                } 
                p{
                 max-width: 400px;

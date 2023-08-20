@@ -53,15 +53,13 @@ splide6.mount();
 
 const splide7 =  new Splide( '#slider7', {
   pagination:false,
-    type   : 'loop',
-    focus  : 'center',
-    perPage: true,
-    perMove: 1,
-    autoHeight:true,
-    gap:40,
-    breakpoints: {
-     500: {perPage: 1,}
-    }
+  type   : 'loop',
+  perPage: 3,
+  perMove: 1,
+  gap:20,
+  breakpoints: {
+    500: { perPage: 1,},
+  },
 })
 
 splide7.mount();
