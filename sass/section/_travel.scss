@@ -1,6 +1,7 @@
 .travel{
     margin-bottom: 100px;
-    .travel__inner{
+    overflow-x: hidden;
+        .travel__inner{
         background-position:center;
         background-size: cover;
         background-attachment:fixed;
@@ -10,7 +11,6 @@
         align-items: center;
         height: 100vh;
         position: relative;
-        overflow-x: hidden;
         @include media($m800){
             background-attachment: initial;
             background-position: right;
