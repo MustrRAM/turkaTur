@@ -4,6 +4,7 @@ body{
     font-weight: 400;
     font-style: normal;
     line-height: normal;
+    overflow-x: hidden;
 }
 
 .body--active{
@@ -63,3 +64,28 @@ body{
 }
 
 
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+.left{
+    transform: translateX(-20px);
+    transition: all 1.2s;
+    opacity: 0;
+}
+
+.right{
+    transform: translateX(20px);
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+
+
+.active{
+    opacity: 1;
+    transform: translate(0);
+}

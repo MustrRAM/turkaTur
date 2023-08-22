@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>TurkaTur</title>
+    <link rel="shortcut icon" href="image/main/svg/comfort2.svg">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container">
                 <nav class="nav">
-                    <a href="#" class="logo"><img src="image/main/svg/logo.svg" width="150" alt=""></a>
+                    <a href="#" class="logo left" id="animation"><img src="image/main/svg/logo.svg" width="150" alt=""></a>
                     <ul class="menu">
                         <a href="#" class="logo">turkaTur</a>
                         <li class="menu__list"><a href="#main" class="menu__link">Главная</a></li>
@@ -27,7 +28,7 @@
                         <li><span class="menu__close"></span> </li>
                     </ul>
                     <div class="social-box">
-                        <div class="nav__phone">
+                        <div class="nav__phone right" id="animation">
                             <a href="tel:+79886501399" class="nav__phone-link">
                                 <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_0_1031)">
@@ -59,7 +60,7 @@
                                 </a>
                             </div>
                         </div>
-                        <button class="nav__button">Забронировать</button>
+                        <button class="nav__button right" id="animation">Забронировать</button>
                     </div>
                     <button class="menu__open">
                         <span></span>
@@ -81,7 +82,7 @@
                         <div class="swiper-pagination"></div>
                 </div>
             </section>
-            <section class="top">
+            <section class="top hidden" id="animation">
                 <div class="container">
                     <h1>Turka<span>Tur</span></h1>
                     <p>Настоящие приключения начинаются здесь</p>
@@ -112,30 +113,30 @@
                 <div class="container">
                     <div class="info__inner">
                         <div class="about">
-                            <h1 class="about__decor">About us</h1>
-                            <h3 class="about__hedaer">о Турагенстве</h3>
-                            <h1 class="about__title">Почему выбирают <span>"turkaTur"</span> для путешествий по Дагестану?</h1>
+                            <h1 class="about__decor hidden" id="animation">About us</h1>
+                            <h3 class="about__hedaer hidden" id="animation">о Турагенстве</h3>
+                            <h1 class="about__title hidden" id="animation">Почему выбирают <span>"turkaTur"</span> для путешествий по Дагестану?</h1>
                             <div class="about__inner">
                                 <ul class="about__menu">
-                                    <li class="about__list">
+                                    <li class="about__list left" id="animation">
                                         <img src="image/main/main1.webp" width="500px" alt="">
                                         <h3>Познание культуры и истории:</h3>
                                         <p>Мы знаем Дагестан как никто другой и готовы поделиться с вами его богатой культурой и историей. Наши гиды – настоящие знатоки региона и с радостью познакомят вас с его уникальными традициями и достопримечательностями.</p>
                                     </li>
-                                    <li class="about__list">
+                                    <li class="about__list right" id="animation">
                                         <img src="image/main/main2.webp" width="500px" alt="">
                                         <h3>Комфорт и безопасность:</h3>
                                         <p> Мы ценим ваше благополучие и делаем все возможное, чтобы ваше путешествие было комфортным и безопасным. Работая только с проверенными партнерами, мы гарантируем высокий уровень сервиса и безупречное качество.</p>
                                     </li>
-                                    <li class="about__list">
-                                        <img src="image/main/main3.webp" width="500px" alt="">
-                                        <h3>Незабываемые пейзажи:</h3>
-                                        <p>Дагестан – это удивительное сочетание разнообразных ландшафтов – от горных вершин до песчаных пляжей на берегу Каспийского моря. Вы сможете наслаждаться невероятными видами и создавать красивые фотографии для вашего альбома воспоминаний.</p>
+                                    <li class="about__list left" id="animation">
+                                        <img id="animation" src="image/main/main3.webp" width="500px" alt="">
+                                        <h3 id="animation">Незабываемые пейзажи:</h3>
+                                        <p id="animation">Дагестан – это удивительное сочетание разнообразных ландшафтов – от горных вершин до песчаных пляжей на берегу Каспийского моря. Вы сможете наслаждаться невероятными видами и создавать красивые фотографии для вашего альбома воспоминаний.</p>
                                     </li>
-                                    <li class="about__list">
-                                        <img src="image/main/main4.webp" width="500px" alt="">
-                                        <h3>Персонализированный подход:</h3>
-                                        <p> Мы понимаем, что каждый клиент уникален, и стремимся предоставить индивидуальный подход к каждому туру. Наши опытные специалисты помогут вам подобрать идеальный вариант, отвечающий вашим потребностям и бюджету.</p>
+                                    <li class="about__list right" id="animation">
+                                        <img id="animation" src="image/main/main4.webp" width="500px" alt="">
+                                        <h3 id="animation">Персонализированный подход:</h3>
+                                        <p id="animation">Мы понимаем, что каждый клиент уникален, и стремимся предоставить индивидуальный подход к каждому туру. Наши опытные специалисты помогут вам подобрать идеальный вариант, отвечающий вашим потребностям и бюджету.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -145,11 +146,11 @@
             </section>
             <section class="tures" id="tures">
                 <div class="container">
-                    <h1 class="tures__decor">Tures</h1>
-                    <h3 class="tures__header">Наши Туры</h3>
-                    <h1 class="tures__title">Каталог наших <span>Туров:</span></h1>
+                    <h1 class="tures__decor hidden" id="animation">Tures</h1>
+                    <h3 class="tures__header hidden" id="animation">Наши Туры</h3>
+                    <h1 class="tures__title hidden" id="animation">Каталог наших <span>Туров:</span></h1>
                     <ul class="tures__cards-menu">
-                        <li class="tures__cards-list">
+                        <li class="tures__cards-list left" id="animation">
                             <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                                 <div class="splide__track">
                                     <ul class="splide__list"> 
@@ -167,7 +168,7 @@
                                 <a class="tures__next" href="hunzah.html">Подробнее...</a>
                             </div>
                         </li>
-                        <li class="tures__cards-list">
+                        <li class="tures__cards-list hidden" id="animation">
                             <div class="splide" id="slider2" role="group" aria-label="Splide Basic HTML Example">
                                 <div class="splide__track">
                                     <ul class="splide__list"> 
@@ -185,7 +186,7 @@
                                 <a class="tures__next" href="sulak.html">Подробнее...</a>
                             </div>
                         </li>
-                        <li class="tures__cards-list">
+                        <li class="tures__cards-list right" id="animation">
                             <div class="splide" id="slider3" role="group" aria-label="Splide Basic HTML Example">
                                 <div class="splide__track">
                                     <ul class="splide__list"> 
@@ -203,7 +204,7 @@
                                 <a class="tures__next" href="derbent.html">Подробнее...</a>
                             </div>
                         </li>
-                        <li class="tures__cards-list">
+                        <li class="tures__cards-list left" id="animation">
                             <div class="splide" id="slider4" role="group" aria-label="Splide Basic HTML Example">
                                 <div class="splide__track">
                                     <ul class="splide__list"> 
@@ -221,7 +222,7 @@
                                 <a class="tures__next" href="derbent.html">Подробнее...</a>
                             </div>
                         </li>
-                        <li class="tures__cards-list">
+                        <li class="tures__cards-list hidden" id="animation">
                             <div class="splide" id="slider5" role="group" aria-label="Splide Basic HTML Example">
                                 <div class="splide__track">
                                     <ul class="splide__list"> 
@@ -239,7 +240,7 @@
                                 <a class="tures__next" href="gamsutl.html">Подробнее...</a>
                             </div>
                         </li>
-                        <li class="tures__cards-list">
+                        <li class="tures__cards-list right" id="animation">
                             <div class="splide" id="slider6" role="group" aria-label="Splide Basic HTML Example">
                                 <div class="splide__track">
                                     <ul class="splide__list"> 
@@ -263,17 +264,17 @@
             <section class="travel">
                 <div class="travel__inner" style="background-image: url(./image/main/travel-bg.jpg);">
                     <div class="container">
-                        <h1>Путешествуйте с нами!</h1>
+                        <h1 class="right" id="animation">Путешествуйте с нами!</h1>
                     </div>
                 </div>
             </section>
             <section class="apartaments" id="apartaments">
                 <div class="container">
-                    <h1 class="apartaments__decor">Apartaments</h1>
-                    <h3 class="apartaments__header">Аппартаменты</h3>
-                    <h1 class="apartaments__title">Каталог наших <span>Квартир:</span></h1>
+                    <h1 class="apartaments__decor hidden" id="animation">Apartaments</h1>
+                    <h3 class="apartaments__header hidden" id="animation">Аппартаменты</h3> 
+                    <h1 class="apartaments__title hidden" id="animation">Каталог наших <span>Квартир:</span></h1>
                     <ul class="apartaments__menu">
-                        <li class="apartaments__list" style="background-image: url(./image/main/apartaments/kv1bg.jpg);">
+                        <li class="apartaments__list left" id="animation" style="background-image: url(./image/main/apartaments/kv1bg.jpg);">
                             <h4 class="appart-number">№01</h4>
                             <a href="appartaments1.html">
                                 <div class="apartaments__animation">
@@ -299,7 +300,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="apartaments__list" style="background-image:  url(./image/main/apartaments2/kv-bg.webp);">
+                        <li class="apartaments__list hidden" id="animation" style="background-image:  url(./image/main/apartaments2/kv-bg.webp);">
                             <h4 class="appart-number">№02</h4>
                             <a href="appartaments2.html">
                                 <div class="apartaments__animation">
@@ -322,7 +323,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="apartaments__list" style="background-image:  url(./image/main/apartaments3/kv2.webp);">
+                        <li class="apartaments__list right" id="animation" style="background-image:  url(./image/main/apartaments3/kv2.webp);">
                             <h4 class="appart-number">№03</h4>
                             <a href="apartaments3.html">
                                 <div class="apartaments__animation">
@@ -350,10 +351,10 @@
             </section>
             <section class="reviews" id="reviews">
                 <div class="container">
-                    <h3 class="reviews__header">Отзывы</h3>
-                    <h1 class="reviews__title"><span>Отзывы</span> от нашх гостей</h1>
+                    <h3 class="reviews__header hidden" id="animation">Отзывы</h3>
+                    <h1 class="reviews__title hidden" id="animation"><span>Отзывы</span> от нашх гостей</h1>
                 </div>
-                <div class="reviews__inner">
+                <div class="reviews__inner hidden" id="animation">
                     <div class="container">
                         <div class="splide" id="slider7" role="group" aria-label="Splide Basic HTML Example">
                             <div class="splide__track">
@@ -368,15 +369,15 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://t.me/+4Cmm1HEfySxhMGMy" class="reviews__link">Оставить отзыв</a>
+                <a href="https://t.me/+4Cmm1HEfySxhMGMy" class="reviews__link right" id="animation">Оставить отзыв</a>
             </section>
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="footer__inner">
+                <div class="footer__inner hidden" id="animation">
                     <div class="footer__logo-box">
-                        <a href="#" class="logo"><img src="image/main/svg/logo-footer.svg" alt=""></a>
-                        <div class="footer__social">
+                        <a href="#" class="logo left" id="animation"><img src="image/main/svg/logo-footer.svg" alt=""></a>
+                        <div class="footer__social hidden" id="animation">
                             <a href="https://t.me/turkaTur"><img src="image/header/telegram.svg" width="25px" alt="Телеграм"></a>
                             <a href="https://api.whatsapp.com/send?phone=79886501399" ><img src="image/header/whats.svg" width="25px" alt="Ватсап"></a>
                             <a href="https://instagram.com/turka_tour?igshid=MzRlODBiNWFlZA==" ><img src="image/header/inst.svg" width="25px" alt="Инстаграмм"></a>
