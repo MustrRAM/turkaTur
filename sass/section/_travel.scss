@@ -10,6 +10,7 @@
         align-items: center;
         height: 100vh;
         position: relative;
+        overflow-x: hidden;
         @include media($m800){
             background-attachment: initial;
             background-position: right;
