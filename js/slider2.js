@@ -3,7 +3,8 @@
 // 1 слайдер
 const splide = new Splide( '.splide', {
     type:'fade',
-  });
+    pagination:false,
+});
   splide.mount();
 
 // 2 слайдер
