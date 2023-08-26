@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>TurkaTur</title>
+    <title>sulak</title>
+    <link rel="shortcut icon" href="image/main/svg/icon-web2.svg">
 </head>
 <body>
     <div class="tures__wrapper">
@@ -48,7 +49,7 @@
             <section class="preview">
                 <div class="preview__inner" style="background-image: url(./image/main/sulak/sulak-bg.webp);">
                     <div class="container">
-                        <div class="preview__texbox">
+                        <div class="preview__texbox left" id="animation">
                             <h1><span>Сулакский каньон</span></h1>
                             <p>Посети одно из красивейших мест России!</p>
                         </div>
@@ -58,12 +59,12 @@
             <section class="tures__info">
                 <div class="tures__info-inner">
                     <div class="container">
-                    <h1 class="tures__info-title">ИНФОРМАЦИЯ О ТУРЕ</h1>
-                    <h2 class="tures__info-subtitle">Наш маршрут до <span>Сулакского каньона:</span></h2>
+                    <h1 class="tures__info-title hidden" id="animation">ИНФОРМАЦИЯ О ТУРЕ</h1>
+                    <h2 class="tures__info-subtitle hidden" id="animation">Наш маршрут до <span>Сулакского каньона:</span></h2>
                         <ul class="tures__info-menu">
                             <li>
-                                <img src="image/main/sulak/sulak1.jpg" width="500px" alt="">
-                                <div>
+                                <img class="left" id="animation" src="image/main/sulak/sulak1.jpg" width="500px" alt="">
+                                <div class=" right" id="animation">
                                     <h3>Чиркейское водохранилище </h3>
                                     <p>
                                         Отправной точкой нашего приключения будет Чиркейское водохранилище.
@@ -72,17 +73,17 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="left" id="animation" >
                                     <h3>Тещин язык смотровая ( вид на само водохранилище и начало ГЭС)</h3>
                                     <p>
                                         На вершине холма, словно древний страж, возвышается Тещин язык — место, где сливаются величественность природы и человеческой инженерии. Открывая захватывающий вид на просторы водохранилища и начало ГЭС, этот видовой пункт становится парадным окном в мир могущества воды, покоя гор и бесконечной динамики энергетики.
                                     </p>
                                 </div>
-                                <img src="image/main/sulak/sulak2.jpg" width="500px" alt="">
+                                <img class="right" id="animation" src="image/main/sulak/sulak2.jpg" width="500px" alt="">
                             </li>
                             <li>
-                                <img src="image/main/sulak/sulak3.jpg" width="500px" alt="">
-                                <div>
+                                <img class="left" id="animation"  src="image/main/sulak/sulak3.jpg" width="500px" alt="">
+                                <div class="right" id="animation" >
                                     <h3>Поселок Дубки</h3>
                                     <p>
                                         Поселок Дубки — уютный уголок среди природы, где сплетаются древние деревья и современная жизнь в гармонии. Свежий воздух, живописные пейзажи и теплая обстановка делают его идеальным местом для уединения и отдыха. В Дубках каждый день — это новая возможность насладиться прекрасными моментами и окунуться в спокойствие природы.
@@ -90,18 +91,18 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="left" id="animation" >
                                     <h3>Главрыба</h3>
                                     <p>
                                         Главрыба —  идеальное место для полного релакса и наслаждения природой. Расположенная в живописном уголке региона, она предлагает комфортное размещение, уютные коттеджи и первоклассный сервис. От пляжных прогулок до рыбалки на Каспии — здесь каждый найдет занятие по душе.
                                     </p>
                                     <span>Так же входит в программу тура: "Поездка на катерах"</span>
                                 </div>
-                                <img src="image/main/sulak/sulak4.jpg" width="500px" alt="">
+                                <img class="right" id="animation"  src="image/main/sulak/sulak4.jpg" width="500px" alt="">
                             </li>
                             <li>
-                                <img src="image/main/sulak/sulak5.jpg" width="500px" alt="">
-                                <div>
+                                <img class="left" id="animation"  src="image/main/sulak/sulak5.jpg" width="500px" alt="">
+                                <div class="right" id="animation" >
                                     <h3>Язык тролля</h3>
                                     <p>
                                         "Язык тролля" в Дагестане — феноменальная природная архитектура, выкованная временем и стихиями. Эти гранитные скалы, напоминающие огромные языки древних существ, возвышаются над окружающей местностью, словно стражи таинственного мира.
@@ -111,7 +112,7 @@
                         </ul>
                     </div>  
                 </div>
-                <div class="gid">
+                <div class="gid hidden" id="animation" >
                     <div class="container">
                         <h1>Кто ведет групу ?</h1>
                         <img src="image/main/tures/gid.jpg" width="400px" alt="Ведущий Гид">
@@ -121,7 +122,7 @@
                 </div>
                 <div class="price">
                     <div class="container">
-                        <div class="price__inner">
+                        <div class="price__inner left" id="animation" >
                             <h1>Стоимость - 4500 Р с человека</h1>
                             <p>Для бронирования тура вносится предоплата в размере 2000 руб. Предоплата не возвращается при отмене брони позднее, чем за 21 день до начала тура. При отмене заранее возвращается полная предоплата.</p>
                             <button class="social__button">Записаться</button>
@@ -145,7 +146,7 @@
                             <span>*Возможны скидки для людей, ранее принимавших участие в других наших турах</span>
                         </div>
                         <ul class="price__card">
-                            <li class="price__card-list">
+                            <li class="price__card-list left" id="animation">
                                 <img src="image/main/svg/ok2.svg" alt="Иконка">
                                 <span>В стоимость входит:</span>
                                 <ul>
@@ -155,7 +156,7 @@
                                     <li>– Аренда походного снаряжения (палатка, тёплый спальный мешок, каремат, треккинговые палки).</li>
                                 </ul>
                             </li>
-                            <li class="price__card-list">
+                            <li class="price__card-list right" id="animation">
                                 <img src="image/main/svg/X.svg" alt="Иконка">
                                 <span>В стоимость не входит:</span>
                                 <ul>
@@ -170,45 +171,44 @@
                 </div>
                 <div class="dresscod">
                     <div class="container">
-                        <h1>Важно Соблюдать Дресскод!</h1>
+                        <h1 class="hidden" id="animation">Важно Соблюдать Дресскод!</h1>
                         <div class="dresscod__inner">
-                        <p>Дагестан – мусульманская республика, поэтому важно придерживаться уважительного отношения к местным традициям и обычаям. Просим соблюдать минимальный дресс-код: носить длинные брюки или шорты не выше колена (относится и к женщинам, и к мужчинам), не брать с собой топы и майки со шлейками (стандартные футболки носить можно), не оголять плечи и живот.</p>
-                        <img src="image/main/tures/dresscod.webp" width="400px" alt="Дресскод">
+                            <p class="hidden" id="animation">Дагестан – мусульманская республика, поэтому важно придерживаться уважительного отношения к местным традициям и обычаям. Просим соблюдать минимальный дресс-код: носить длинные брюки или шорты не выше колена (относится и к женщинам, и к мужчинам), не брать с собой топы и майки со шлейками (стандартные футболки носить можно), не оголять плечи и живот.</p>
+                            <img class="right" id="animation" src="image/main/tures/dresscod.webp" width="400px" alt="Дресскод">
                         </div>
-                        
                     </div>
                 </div>
             </section>
             <section class="gallery">
                 <div class="container">
-                <h1 class="gallery__title">Фотоотчеты</h1>
-                <p class="gallery__text">Люди, которые путешествуют с нами, делятся впечатлениями.</p>
-                <div class="gallery__inner">
-                    <div class="card">
-                        <img src="image/main/sulak/gallery1.jpg" height="300px" width="400" alt="">
-                        <div class="card-textbox">
-                            <h2 class="card__title">Сулакский каньон</h2>
-                            <p>Сулакский каньон величественно раскинул свои извилистые ущелья, приглашая вас на незабываемое путешествие среди впечатляющих скал и глубоких ущелий.</p>
+                    <h1 class="gallery__title hidden"  id="animation">Фотоотчеты</h1>
+                    <p class="gallery__text hidden"  id="animation">Люди, которые путешествуют с нами, делятся впечатлениями.</p>
+                    <div class="gallery__inner">
+                        <div class="card">
+                            <img class="hidden" id="animation" src="image/main/sulak/gallery1.jpg" height="300px" width="400" alt="">
+                            <div class="card-textbox right"  id="animation">
+                                <h2 class="card__title">Сулакский каньон</h2>
+                                <p>Сулакский каньон величественно раскинул свои извилистые ущелья, приглашая вас на незабываемое путешествие среди впечатляющих скал и глубоких ущелий.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="hidden"  id="animation" src="image/main/sulak/gallery2.jpg" height="300px" width="400px" alt="">
+                            <div class="card-textbox right"  id="animation">
+                                <h2 class="card__title">Тур по Сулакскому каньону</h2>
+                                <p>Погрузитесь в захватывающий тур по Сулакскому каньону и окунитесь в мир древних горных ландшафтов, где мощные скалы и бурные воды реки Сулак создают неповторимую атмосферу приключения.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="image/main/sulak/gallery2.jpg" height="300px" width="400px" alt="">
-                        <div class="card-textbox">
-                            <h2 class="card__title">Тур по Сулакскому каньону</h2>
-                            <p>Погрузитесь в захватывающий тур по Сулакскому каньону и окунитесь в мир древних горных ландшафтов, где мощные скалы и бурные воды реки Сулак создают неповторимую атмосферу приключения.</p>
-                        </div>
-                    </div>
+                    <a class="reviews__link left" id="animation" href="https://instagram.com/turka_tour?igshid=MzRlODBiNWFlZA==" >Больше фотографий тут</a>
                 </div>
-                <a href="https://instagram.com/turka_tour?igshid=MzRlODBiNWFlZA==" class="reviews__link">Больше фотографий тут</a>
-            </div>
             </section>
         </main>
-        <footer class="footer">
+         <footer class="footer">
             <div class="container">
-                <div class="footer__inner">
+                <div class="footer__inner hidden" id="animation">
                     <div class="footer__logo-box">
-                        <a href="#" class="logo"><img src="image/main/svg/logo-footer.svg" alt=""></a>
-                        <div class="footer__social">
+                        <a href="#" class="logo left" id="animation"><img src="image/main/svg/logo-footer.svg" alt=""></a>
+                        <div class="footer__social hidden" id="animation">
                             <a href="https://t.me/turkaTur"><img src="image/header/telegram.svg" width="25px" alt="Телеграм"></a>
                             <a href="https://api.whatsapp.com/send?phone=79886501399" ><img src="image/header/whats.svg" width="25px" alt="Ватсап"></a>
                             <a href="https://instagram.com/turka_tour?igshid=MzRlODBiNWFlZA==" ><img src="image/header/inst.svg" width="25px" alt="Инстаграмм"></a>
@@ -216,9 +216,9 @@
                     </div>
                     <ul class="footer__menu">
                         <li class="menu__list"><span>Главная</span></li>
-                        <li class="menu__list"><a href="index.html" class="menu__link">О нас</a></li>
-                        <li class="menu__list"><a href="#index.html" class="menu__link">Туры</a></li>
-                        <li class="menu__list"><a href="#index.html" class="menu__link">Квартиры</a></li>
+                        <li class="menu__list"><a href="#info" class="menu__link">О нас</a></li>
+                        <li class="menu__list"><a href="#tures" class="menu__link">Туры</a></li>
+                        <li class="menu__list"><a href="#apartaments" class="menu__link">Квартиры</a></li>
                     </ul>
                     <ul class="footer__link-box">
                         <li class="menu__list"><span>Туры</span></li>
@@ -228,8 +228,8 @@
                     </ul>
                     <ul class="footer__number">
                         <li><span>Номера для связи</span></li>
-                        <li>Тимур - <a href="tel:+79886501399">+7 988 650 1399</a></li>
-                        <li>Магият - <a href="tel:+79280587928">+7 928 058 7928</a></li>
+                        <li>Тимур - <a href="tel:+79280587928">+7 928 058 7928</a></li>
+                        <li>Магият - <a href="tel:+79886501399">+7 988 650 1399</a></li>
                     </ul>
                 </div>
             </div>
