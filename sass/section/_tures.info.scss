@@ -1,4 +1,5 @@
 .tures__info{
+        overflow-x: hidden;
         margin-bottom: 100px;
        
         img{
@@ -109,6 +110,7 @@
     }
 
     .gid{
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -264,7 +266,6 @@
 
 
         .price__card{
-            display: flex;
             gap: 30px;
             justify-content: center;
             @include media($m1000){
@@ -304,6 +305,7 @@
     
 
     .dresscod{
+        overflow-x: hidden;
         h1{
             font-size: 40px;
             @include media($m800){
