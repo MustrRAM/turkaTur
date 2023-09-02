@@ -369,7 +369,15 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://t.me/+4Cmm1HEfySxhMGMy" class="reviews__link right" id="animation">Оставить отзыв</a>
+                <form id="reviewForm">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="review">Отзыв:</label>
+                    <textarea id="review" name="review" required></textarea>
+                    <br>
+                    <button type="submit">Отправить</button>
+                </form>
             </section>
         </main>
         <footer class="footer">
@@ -409,5 +417,6 @@
     <script src="js/splide.min.js"></script>
     <script src="js/slider2.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/reviews.js"></script>
 </body>
 </html>
